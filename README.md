@@ -7,7 +7,7 @@ Mixes elements of blackjack, war, and other jazz.
 
 Rules
 -----
-See rules.pdf
+See rules.pdf [Currently nonexistent]
 
 State
 -----
