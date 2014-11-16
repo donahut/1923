@@ -7,7 +7,7 @@ Mixes elements of blackjack, war, and other jazz.
 
 Rules
 -----
-See rules.pdf [Currently nonexistent]
+See the [docs](https://github.com/donahut/1923/tree/master/docs).
 
 State
 -----
