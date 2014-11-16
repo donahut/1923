@@ -1,0 +1,67 @@
+* 1923
+** About
+Magnificient card game.
+
+*** Testimonials
+"1923 saved my life." - Local man
+
+
+** Rules
+*** Players
+2 or more players are required to play
+
+**** Decks
+The number of decks used are dependent on the number of players. To
+calcultae how many decks you should be using, here is a handy-dandy
+equation:
+
+number of decks = ceil( number of players / 3 )
+
+*** Gameplay
+
+**** Drawing First
+All players draw 1 card from the deck. Higest card wins (based on
+value i.e. 10 is the same as a king). If there is a tie, tied players
+draw again. Drawn cards are discarded from the game -- not reshuffled
+into the deck.
+
+**** Each Round
+
+***** Winning
+Combined card value (blackjack rules; Ace can be 1 or 11) between
+19-23. If multiple players are within that range, the player with the
+value closest to 23 wins. If no player is within that range, the
+player with the value closest to 19 or 23 wins (being closer to 19 or
+23 are equal). Winning player keeps all cards from the round
+(including tiebreaker cards). 
+
+****** Breaking Ties
+Player with the lowest average card value wins. If multiple players
+have the same average card value, the players will draw a single card
+and highest card (as before, based on value, i.e. 10 is the same as a
+king) wins (repeat until winner is found).
+
+***** Drawing Cards
+1. Every player draws 2 cards and places them face down (without
+   looking at them). The cards should be placed side-by-side and to
+   the right hand side of the "players space."
+2. Asynchronously, each player can draw as many cards as they desire.
+   If a player wishes to look at one of their cards, they must draw
+   an additional card. Each additional card must be placed to the
+   left of the original 2 cards.
+3. Each player must lock their left-most card when they are done
+   drawing cards. Once a player has locked, they cannot unlock. To
+   lock, the player turns the card sideways.
+4. Once each player has locked, all players must turnover their cards
+   and count their value. Winner is determined as outlined above.
+
+
+*** Winning the game
+When there aren't enough cards left to carry out another round, the
+game is over. The winner is the player with the most cards.
+
+
+** Creators
+- Thomas Donahue
+- Carlos Asmat
+- Cody Canning
