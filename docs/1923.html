@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>1923</title>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
 <meta name="title" content="1923"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2014-11-16T17:18-0500"/>
+<meta name="generated" content="2014-11-17T22:15-0500"/>
 <meta name="author" content="Thomas Donahue"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -133,7 +133,7 @@ for the JavaScript code in this tag.
 <ul>
 <li><a href="#sec-1-2-1">1.2.1 Players</a></li>
 <li><a href="#sec-1-2-2">1.2.2 Gameplay</a></li>
-<li><a href="#sec-1-2-3">1.2.3 Winning the game</a></li>
+<li><a href="#sec-1-2-3">1.2.3 Winning</a></li>
 </ul>
 </li>
 <li><a href="#sec-1-3">1.3 Creators</a></li>
@@ -193,6 +193,10 @@ equation:
 <p>
 number of decks = ceil( number of players / 3 )
 </p>
+<p>
+On the other hand, if you lack the proper amount of decks, just go
+with what you got. 
+</p>
 </li>
 </ul>
 </div>
@@ -205,19 +209,7 @@ number of decks = ceil( number of players / 3 )
 
 
 <ul>
-<li id="sec-1-2-2-1">Drawing First<br/>
-All players draw 1 card from the deck. Higest card wins (based on
-value i.e. 10 is the same as a king). If there is a tie, tied players
-draw again. Drawn cards are discarded from the game &ndash; not reshuffled
-into the deck.
-
-</li>
-</ul>
-<ul>
-<li id="sec-1-2-2-2">Each Round<br/>
-
-<ul>
-<li id="sec-1-2-2-2-1">Winning<br/>
+<li id="sec-1-2-2-1">Winning<br/>
 Combined card value (blackjack rules; Ace can be 1 or 11) between
 19-23. If multiple players are within that range, the player with the
 value closest to 23 wins. If no player is within that range, the
@@ -226,8 +218,8 @@ player with the value closest to 19 or 23 wins (being closer to 19 or
 (including tiebreaker cards). 
 
 <ul>
-<li id="sec-1-2-2-2-1-1">Breaking Ties<br/>
-Player with the lowest average card value wins. If multiple players
+<li id="sec-1-2-2-1-1">Breaking Ties<br/>
+Player with the highest average card value wins. If multiple players
 have the same average card value, the players will draw a single card
 and highest card (as before, based on value, i.e. 10 is the same as a
 king) wins (repeat until winner is found).
@@ -237,23 +229,30 @@ king) wins (repeat until winner is found).
 </li>
 </ul>
 <ul>
-<li id="sec-1-2-2-2-2">Drawing Cards<br/>
+<li id="sec-1-2-2-2">Drawing Cards<br/>
 <ol>
 <li>Every player draws 2 cards and places them face down (without
-   looking at them). The cards should be placed side-by-side and to
-   the right hand side of the "players space."
+   looking at them). By custom, the cards are to be placed
+   side-by-side and to the right hand side in front of the player.
 </li>
-<li>Asynchronously, each player can draw as many cards as they desire.
-   If a player wishes to look at one of their cards, they must draw
-   an additional card. Each additional card must be placed to the
-   left of the original 2 cards.
+<li>Players may look at one of their 2 cards.
+</li>
+<li>If a player desires to view the other card, they may due so, but
+   are required to take another card from the deck as a result.
+   Players can repeat this step as many times as they would like. This
+   is done asynchronously (i.e., you needn't wait and see what other
+   players do). By custom, each additional card must be placed to the
+   left of the original 2 cards (and so on).
 </li>
 <li>Each player must lock their left-most card when they are done
-   drawing cards. Once a player has locked, they cannot unlock. To
-   lock, the player turns the card sideways.
+   drawing cards (i.e., the card they do not know the value of). Once
+   a player has locked, they cannot unlock. To lock, the player turns
+   the card sideways &ndash; a card is locked once the player has removed
+   their hand from the card. 
 </li>
 <li>Once each player has locked, all players must turnover their cards
-   and count their value. Winner is determined as outlined above.
+   (from right to left) and count their value. Winner is determined as
+   outlined above.
 </li>
 </ol>
 
@@ -261,18 +260,25 @@ king) wins (repeat until winner is found).
 
 </li>
 </ul>
-</li>
-</ul>
 </div>
 
 </div>
 
 <div id="outline-container-1-2-3" class="outline-4">
-<h4 id="sec-1-2-3"><span class="section-number-4">1.2.3</span> Winning the game</h4>
+<h4 id="sec-1-2-3"><span class="section-number-4">1.2.3</span> Winning</h4>
 <div class="outline-text-4" id="text-1-2-3">
 
 <p>When there aren't enough cards left to carry out another round, the
-game is over. The winner is the player with the most cards.
+game is over. What does it mean there aren't enough cards? First, if
+there enough cards for every player to have at least 2, then there
+are enough cards. Any remaining cards after every player has taken 2
+are availible in a first come-first serve fashion. If there are only
+enough cards for 1 card per player, then the gameplay reverts to war.
+In all other cases, there aren't enough cards, and the remaining
+cards are dead.
+</p>
+<p>
+The winner is the player with the most cards.
 </p>
 
 </div>
@@ -299,7 +305,7 @@ game is over. The winner is the player with the most cards.
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2014-11-16T17:18-0500</p>
+<p class="date">Date: 2014-11-17T22:15-0500</p>
 <p class="author">Author: Thomas Donahue</p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>

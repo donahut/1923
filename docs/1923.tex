@@ -1,4 +1,4 @@
-% Created 2014-11-16 Sun 17:18
+% Created 2014-11-17 Mon 22:15
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -58,26 +58,16 @@ equation:
 
 number of decks = ceil( number of players / 3 )
 
+On the other hand, if you lack the proper amount of decks, just go
+with what you got. 
+
 \end{itemize} % ends low level
 \subsubsection{Gameplay}
 \label{sec-1-2-2}
 \begin{itemize}
 
-\item Drawing First\\
-\label{sec-1-2-2-1}%
-All players draw 1 card from the deck. Higest card wins (based on
-value i.e. 10 is the same as a king). If there is a tie, tied players
-draw again. Drawn cards are discarded from the game -- not reshuffled
-into the deck.
-
-
-\item Each Round
-\label{sec-1-2-2-2}%
-
-\begin{itemize}
-
 \item Winning\\
-\label{sec-1-2-2-2-1}%
+\label{sec-1-2-2-1}%
 Combined card value (blackjack rules; Ace can be 1 or 11) between
 19-23. If multiple players are within that range, the player with the
 value closest to 23 wins. If no player is within that range, the
@@ -88,8 +78,8 @@ player with the value closest to 19 or 23 wins (being closer to 19 or
 \begin{itemize}
 
 \item Breaking Ties\\
-\label{sec-1-2-2-2-1-1}%
-Player with the lowest average card value wins. If multiple players
+\label{sec-1-2-2-1-1}%
+Player with the highest average card value wins. If multiple players
 have the same average card value, the players will draw a single card
 and highest card (as before, based on value, i.e. 10 is the same as a
 king) wins (repeat until winner is found).
@@ -97,30 +87,43 @@ king) wins (repeat until winner is found).
 \end{itemize} % ends low level
 
 \item Drawing Cards
-\label{sec-1-2-2-2-2}%
+\label{sec-1-2-2-2}%
 \begin{enumerate}
 \item Every player draws 2 cards and places them face down (without
-   looking at them). The cards should be placed side-by-side and to
-   the right hand side of the ``players space.''
-\item Asynchronously, each player can draw as many cards as they desire.
-   If a player wishes to look at one of their cards, they must draw
-   an additional card. Each additional card must be placed to the
-   left of the original 2 cards.
+   looking at them). By custom, the cards are to be placed
+   side-by-side and to the right hand side in front of the player.
+\item Players may look at one of their 2 cards.
+\item If a player desires to view the other card, they may due so, but
+   are required to take another card from the deck as a result.
+   Players can repeat this step as many times as they would like. This
+   is done asynchronously (i.e., you needn't wait and see what other
+   players do). By custom, each additional card must be placed to the
+   left of the original 2 cards (and so on).
 \item Each player must lock their left-most card when they are done
-   drawing cards. Once a player has locked, they cannot unlock. To
-   lock, the player turns the card sideways.
+   drawing cards (i.e., the card they do not know the value of). Once
+   a player has locked, they cannot unlock. To lock, the player turns
+   the card sideways -- a card is locked once the player has removed
+   their hand from the card.
 \item Once each player has locked, all players must turnover their cards
-   and count their value. Winner is determined as outlined above.
+   (from right to left) and count their value. Winner is determined as
+   outlined above.
 \end{enumerate}
 
 
 \end{itemize} % ends low level
-\end{itemize} % ends low level
-\subsubsection{Winning the game}
+\subsubsection{Winning}
 \label{sec-1-2-3}
 
 When there aren't enough cards left to carry out another round, the
-game is over. The winner is the player with the most cards.
+game is over. What does it mean there aren't enough cards? First, if
+there enough cards for every player to have at least 2, then there
+are enough cards. Any remaining cards after every player has taken 2
+are availible in a first come-first serve fashion. If there are only
+enough cards for 1 card per player, then the gameplay reverts to war.
+In all other cases, there aren't enough cards, and the remaining
+cards are dead.
+
+The winner is the player with the most cards.
 \subsection{Creators}
 \label{sec-1-3}
 
