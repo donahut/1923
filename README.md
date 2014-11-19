@@ -1,9 +1,6 @@
 1923
 ====
-
 Magnificent card game. 
-
-Mixes elements of blackjack, war, and other jazz.
 
 Rules
 -----

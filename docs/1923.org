@@ -1,6 +1,6 @@
 * 1923
 ** About
-Magnificient card game.
+Magnificent card game.
 
 *** Testimonials
 "1923 saved my life." - Local man
@@ -12,7 +12,7 @@ Magnificient card game.
 
 **** Decks
 The number of decks used are dependent on the number of players. To
-calcultae how many decks you should be using, here is a handy-dandy
+calculate how many decks you should be using, here is a handy-dandy
 equation:
 
 number of decks = ceil( number of players / 3 )
@@ -20,9 +20,19 @@ number of decks = ceil( number of players / 3 )
 On the other hand, if you lack the proper amount of decks, just go
 with what you got. 
 
-*** Gameplay
+*** Structure 
 
-**** Winning
+**** Overview
+1923 is played in terms of Games, Sets and Matches (akin to Tennis).  
+
+- A Game is much like a "hand" in other card games (e.g. Poker), it is
+  the smallest chunk of the game. There are multiple games per set.
+- A Set is complete when the deck has been depleted. There are
+  multiple sets per match.
+- A Match is what comprises the entire length of the game.
+
+**** Games
+***** Winning
 Combined card value (blackjack rules; Ace can be 1 or 11) between
 19-23. If multiple players are within that range, the player with the
 value closest to 23 wins. If no player is within that range, the
@@ -30,13 +40,18 @@ player with the value closest to 19 or 23 wins (being closer to 19 or
 23 are equal). Winning player keeps all cards from the round
 (including tiebreaker cards). 
 
-***** Breaking Ties
+****** Breaking Ties
 Player with the highest average card value wins. If multiple players
 have the same average card value, the players will draw a single card
 and highest card (as before, based on value, i.e. 10 is the same as a
-king) wins (repeat until winner is found).
+king) wins (repeat until winner is found). 
 
-**** Drawing Cards
+If there aren't enough cards to break a tie in that manner, stay tuned
+because we haven't figured it out yet. One idea we're kicking around,
+if you'd like guidance, if to take all of the cards in your hand and
+play war until there is a winner.
+
+***** Gameplay
 1. Every player draws 2 cards and places them face down (without
    looking at them). By custom, the cards are to be placed
    side-by-side and to the right hand side in front of the player.
@@ -56,21 +71,54 @@ king) wins (repeat until winner is found).
    (from right to left) and count their value. Winner is determined as
    outlined above.
 
+**** Sets
+***** Completion
+Sets are complete when there aren't enough cards left to carry out
+another round, the game is over. What does it mean there aren't enough
+cards? First, if there enough cards for every player to have at least
+2, then there are enough cards. Any remaining cards after every player
+has taken 2 are available in a first come-first serve fashion. If
+there are only enough cards for 1 card per player, then the gameplay
+reverts to war. In all other cases, there aren't enough cards, and the
+remaining cards are dead.
 
-*** Winning
-When there aren't enough cards left to carry out another round, the
-game is over. What does it mean there aren't enough cards? First, if
-there enough cards for every player to have at least 2, then there
-are enough cards. Any remaining cards after every player has taken 2
-are availible in a first come-first serve fashion. If there are only
-enough cards for 1 card per player, then the gameplay reverts to war.
-In all other cases, there aren't enough cards, and the remaining
-cards are dead.
+***** Winning
+The winner is the player with the most cards. If multiple players have
+the same number of cards, they share the win. This is important for
+the tabulation of points (see below).
 
-The winner is the player with the most cards.
+****** Tabulating Points
+Once the winning player(s) of the set has been found, their card
+totals are transferred into point totals, which are added to a running
+sum across all sets until the Match has been completed. 
+
+In general, points are simply 1-to-1 mapped to the number of cards the
+player won during that set -- with 1 caveat... Aces! If the winning
+player(s) has any Aces in their hand, they receive what is known as
+"Ace benefit," which is an additional point-per-Ace. Conversely, for
+every Ace each losing player has in their hand, they receive what is
+known as "Ace damage," which removes a point.
+
+**** Matches
+***** Completion
+A Match is complete when a player has reached N points (where N is a
+number we haven't decided yet).
+
+***** Winning
+The winner of the match the person who reaches N points first. If
+multiple players reach N at the completion of a set, then the player
+with the highest card total overall wins. 
+
+If multiple players have the same number of cards... we don't know
+yet. Perhaps revert to war again (though that's unsatisfying).
 
 
-** Creators
+** Creators, Maintainers and Benevolent Overlords for Life
 - Thomas Donahue
 - Carlos Asmat
 - Cody Canning
+
+*** Contributors
+- Lindsay and Alex
+- Holly Morris
+- Russ Nickerson
