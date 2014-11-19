@@ -5,14 +5,18 @@ Magnificient card game.
 *** Testimonials
 "1923 saved my life." - Local man
 
+"So asynchronous!" - Carlos
+
+"Surprisingly fun." - Holly
+
 
 ** Rules
 *** Players
 2 or more players are required to play
 
 **** Decks
-The number of decks used are dependent on the number of players. To
-calcultae how many decks you should be using, here is a handy-dandy
+The number of decks used depend on the number of players. To
+calculate how many decks you should be using, here is a handy-dandy
 equation:
 
 number of decks = ceil( number of players / 3 )
