@@ -42,22 +42,20 @@ king) wins (repeat until winner is found).
 
 **** Drawing Cards
 1. Every player draws 2 cards and places them face down (without
-   looking at them). By custom, the cards are to be placed
-   side-by-side and to the right hand side in front of the player.
+   looking at them).
 2. Players may look at one of their 2 cards.
 3. If a player desires to view the other card, they may due so, but
    are required to take another card from the deck as a result.
    Players can repeat this step as many times as they would like. This
    is done asynchronously (i.e., you needn't wait and see what other
-   players do). By custom, each additional card must be placed to the
-   left of the original 2 cards (and so on).
-3. Each player must lock their left-most card when they are done
+   players do).
+3. Each player must lock their last card when they are done
    drawing cards (i.e., the card they do not know the value of). Once
    a player has locked, they cannot unlock. To lock, the player turns
    the card sideways -- a card is locked once the player has removed
    their hand from the card. 
 4. Once each player has locked, all players must turnover their cards
-   (from right to left) and count their value. Winner is determined as
+   and count their value. Winner is determined as
    outlined above.
 
 
@@ -73,6 +71,30 @@ cards are dead.
 
 The winner is the player with the most cards.
 
+** Customs and Traditions
+1923 has a rich and colourful tradition that resulted in the general acceptance
+of some peculiar and distinctive practices. Although from a practical standpoint
+they may seem unavailing to the game, these conventions are cherished and
+respected by most players. Many consider that ignoring these customs is a sign
+of direct disrespect to the game's culture and its beloved creators and
+contributors.
+
+*** Traditional Practices
+1. The cards shall not be shuffled. They may be mixed and the deck can be cut
+   but shuffling is frowned upon. Early mathematical analysis of the game made
+   it very clear that shuffling does not affect its mechanics.
+
+2. When picking cards form the deck, they are to be placed side-by-side and to
+   the right-hand-side in front of the player.
+
+2. When picking additional cards from the deck, they must be placed to the left
+   of the original 2 cards. This results in the leftmost card being always
+   unknown, adding a deep metaphorical meaning to the game and evoking the
+   sinister connotation of the sinistral card.
+
+3. At the end of each hand, the cards should be revealed from right to left.
+   This prolongs the suspense for each player, adding to the bold fun we all
+   grew to expect from this magnificent game.
 
 ** Creators
 - Thomas Donahue
