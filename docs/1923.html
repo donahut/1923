@@ -1,63 +1,89 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE html>
+<html>
 <head>
 <title>1923</title>
-<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
-<meta name="title" content="1923"/>
-<meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2014-11-17T22:15-0500"/>
-<meta name="author" content="Thomas Donahue"/>
-<meta name="description" content=""/>
-<meta name="keywords" content=""/>
+<!-- 2014-11-19 Wed 14:39 -->
+<meta  charset="utf-8">
+<meta  name="generator" content="Org-mode">
+<meta  name="author" content="Thomas Donahue">
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
-  html { font-family: Times, serif; font-size: 12pt; }
   .title  { text-align: center; }
-  .todo   { color: red; }
+  .todo   { font-family: monospace; color: red; }
   .done   { color: green; }
-  .tag    { background-color: #add8e6; font-weight:normal }
-  .target { }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
   .timestamp { color: #bebebe; }
   .timestamp-kwd { color: #5f9ea0; }
-  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
-  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
-  .center {margin-left:auto; margin-right:auto; text-align:center;}
-  p.verse { margin-left: 3% }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
   pre {
-	border: 1pt solid #AEBDCC;
-	background-color: #F3F5F7;
-	padding: 5pt;
-	font-family: courier, monospace;
-        font-size: 90%;
-        overflow:auto;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
   }
-  table { border-collapse: collapse; }
-  td, th { vertical-align: top;  }
-  th.right  { text-align:center;  }
-  th.left   { text-align:center;   }
-  th.center { text-align:center; }
-  td.right  { text-align:right;  }
-  td.left   { text-align:left;   }
-  td.center { text-align:center; }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
   dt { font-weight: bold; }
-  div.figure { padding: 0.5em; }
-  div.figure p { text-align: center; }
-  div.inlinetask {
-    padding:10px;
-    border:2px solid gray;
-    margin:10px;
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
     background: #ffffcc;
   }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
   textarea { overflow-x: auto; }
-  .linenr { font-size:smaller }
-  .code-highlighted {background-color:#ffff00;}
-  .org-info-js_info-navigation { border-style:none; }
-  #org-info-js_console-label { font-size:10px; font-weight:bold;
-                               white-space:nowrap; }
-  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
-                                 font-weight:bold; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
   /*]]>*/-->
 </style>
 <script type="text/javascript">
@@ -106,191 +132,249 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
-
 </head>
 <body>
-
-<div id="preamble">
-
-</div>
-
 <div id="content">
 <h1 class="title">1923</h1>
-
-
-<div id="table-of-contents">
+<nav id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1 1923</a>
+<li><a href="#sec-1">1. 1923</a>
 <ul>
-<li><a href="#sec-1-1">1.1 About</a>
+<li><a href="#sec-1-1">1.1. About</a>
 <ul>
-<li><a href="#sec-1-1-1">1.1.1 Testimonials</a></li>
+<li><a href="#sec-1-1-1">1.1.1. Testimonials</a></li>
 </ul>
 </li>
-<li><a href="#sec-1-2">1.2 Rules</a>
+<li><a href="#sec-1-2">1.2. Rules</a>
 <ul>
-<li><a href="#sec-1-2-1">1.2.1 Players</a></li>
-<li><a href="#sec-1-2-2">1.2.2 Gameplay</a></li>
-<li><a href="#sec-1-2-3">1.2.3 Winning</a></li>
+<li><a href="#sec-1-2-1">1.2.1. Players</a></li>
+<li><a href="#sec-1-2-2">1.2.2. Structure</a></li>
 </ul>
 </li>
-<li><a href="#sec-1-3">1.3 Creators</a></li>
+<li><a href="#sec-1-3">1.3. Creators, Maintainers and Benevolent Overlords for Life</a>
+<ul>
+<li><a href="#sec-1-3-1">1.3.1. Contributors</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </div>
-</div>
-
-<div id="outline-container-1" class="outline-2">
+</nav>
+<div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1"><span class="section-number-2">1</span> 1923</h2>
 <div class="outline-text-2" id="text-1">
-
-
-</div>
-
-<div id="outline-container-1-1" class="outline-3">
+</div><div id="outline-container-sec-1-1" class="outline-3">
 <h3 id="sec-1-1"><span class="section-number-3">1.1</span> About</h3>
 <div class="outline-text-3" id="text-1-1">
-
-<p>Magnificient card game.
+<p>
+Magnificent card game.
 </p>
-
 </div>
 
-<div id="outline-container-1-1-1" class="outline-4">
+<div id="outline-container-sec-1-1-1" class="outline-4">
 <h4 id="sec-1-1-1"><span class="section-number-4">1.1.1</span> Testimonials</h4>
 <div class="outline-text-4" id="text-1-1-1">
-
-<p>"1923 saved my life." - Local man
+<p>
+"1923 saved my life." - Local man
 </p>
 
+<p>
+"So asynchronous!" - Carlos
+</p>
+
+<p>
+"Surprisingly fun." - Holly
+</p>
+</div>
 </div>
 </div>
 
-</div>
 
-<div id="outline-container-1-2" class="outline-3">
+<div id="outline-container-sec-1-2" class="outline-3">
 <h3 id="sec-1-2"><span class="section-number-3">1.2</span> Rules</h3>
 <div class="outline-text-3" id="text-1-2">
-
-
-</div>
-
-<div id="outline-container-1-2-1" class="outline-4">
+</div><div id="outline-container-sec-1-2-1" class="outline-4">
 <h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> Players</h4>
 <div class="outline-text-4" id="text-1-2-1">
-
-<p>2 or more players are required to play
+<p>
+2 or more players are required to play
 </p>
-<ul>
-<li id="sec-1-2-1-1">Decks<br/>
-The number of decks used are dependent on the number of players. To
-calcultae how many decks you should be using, here is a handy-dandy
+</div>
+
+<ol class="org-ol"><li>Decks<br ><div class="outline-text-5" id="text-1-2-1-1">
+<p>
+The number of decks used depend on the number of players. To
+calculate how many decks you should be using, here is a handy-dandy
 equation:
+</p>
 
 <p>
 number of decks = ceil( number of players / 3 )
 </p>
+
 <p>
 On the other hand, if you lack the proper amount of decks, just go
 with what you got. 
 </p>
+</div>
+</li></ol>
+</div>
+
+<div id="outline-container-sec-1-2-2" class="outline-4">
+<h4 id="sec-1-2-2"><span class="section-number-4">1.2.2</span> Structure</h4>
+<div class="outline-text-4" id="text-1-2-2">
+</div><ol class="org-ol"><li>Overview<br ><div class="outline-text-5" id="text-1-2-2-1">
+<p>
+1923 is played in terms of Games, Sets and Matches (akin to Tennis).  
+</p>
+
+<ul class="org-ul">
+<li>A Game is much like a "hand" in other card games (e.g. Poker), it is
+the smallest chunk of the game. There are multiple games per set.
+</li>
+<li>A Set is complete when the deck has been depleted. There are
+multiple sets per match.
+</li>
+<li>A Match is what comprises the entire length of the game.
 </li>
 </ul>
 </div>
+</li>
 
-</div>
-
-<div id="outline-container-1-2-2" class="outline-4">
-<h4 id="sec-1-2-2"><span class="section-number-4">1.2.2</span> Gameplay</h4>
-<div class="outline-text-4" id="text-1-2-2">
-
-
-<ul>
-<li id="sec-1-2-2-1">Winning<br/>
+<li>Games<br ><ol class="org-ol"><li>Winning<br ><div class="outline-text-6" id="text-1-2-2-2-1">
+<p>
 Combined card value (blackjack rules; Ace can be 1 or 11) between
 19-23. If multiple players are within that range, the player with the
 value closest to 23 wins. If no player is within that range, the
 player with the value closest to 19 or 23 wins (being closer to 19 or
 23 are equal). Winning player keeps all cards from the round
 (including tiebreaker cards). 
+</p>
+</div>
 
-<ul>
-<li id="sec-1-2-2-1-1">Breaking Ties<br/>
+<ol class="org-ol"><li>Breaking Ties<br ><div class="outline-text-7" id="text-1-2-2-2-1-1">
+<p>
 Player with the highest average card value wins. If multiple players
 have the same average card value, the players will draw a single card
 and highest card (as before, based on value, i.e. 10 is the same as a
-king) wins (repeat until winner is found).
+king) wins (repeat until winner is found). 
+</p>
 
+<p>
+If there aren't enough cards to break a tie in that manner, stay tuned
+because we haven't figured it out yet. One idea we're kicking around,
+if you'd like guidance, if to take all of the cards in your hand and
+play war until there is a winner.
+</p>
+</div>
+</li></ol>
 </li>
-</ul>
-</li>
-</ul>
-<ul>
-<li id="sec-1-2-2-2">Drawing Cards<br/>
-<ol>
+
+<li>Gameplay<br ><div class="outline-text-6" id="text-1-2-2-2-2">
+<ol class="org-ol">
 <li>Every player draws 2 cards and places them face down (without
-   looking at them). By custom, the cards are to be placed
-   side-by-side and to the right hand side in front of the player.
+looking at them). By custom, the cards are to be placed
+side-by-side and to the right hand side in front of the player.
 </li>
 <li>Players may look at one of their 2 cards.
 </li>
 <li>If a player desires to view the other card, they may due so, but
-   are required to take another card from the deck as a result.
-   Players can repeat this step as many times as they would like. This
-   is done asynchronously (i.e., you needn't wait and see what other
-   players do). By custom, each additional card must be placed to the
-   left of the original 2 cards (and so on).
+are required to take another card from the deck as a result.
+Players can repeat this step as many times as they would like. This
+is done asynchronously (i.e., you needn't wait and see what other
+players do). By custom, each additional card must be placed to the
+left of the original 2 cards (and so on).
 </li>
 <li>Each player must lock their left-most card when they are done
-   drawing cards (i.e., the card they do not know the value of). Once
-   a player has locked, they cannot unlock. To lock, the player turns
-   the card sideways &ndash; a card is locked once the player has removed
-   their hand from the card. 
+drawing cards (i.e., the card they do not know the value of). Once
+a player has locked, they cannot unlock. To lock, the player turns
+the card sideways &#x2013; a card is locked once the player has removed
+their hand from the card. 
 </li>
 <li>Once each player has locked, all players must turnover their cards
-   (from right to left) and count their value. Winner is determined as
-   outlined above.
+(from right to left) and count their value. Winner is determined as
+outlined above.
 </li>
 </ol>
-
-
-
+</div>
+</li></ol>
 </li>
-</ul>
-</div>
 
-</div>
-
-<div id="outline-container-1-2-3" class="outline-4">
-<h4 id="sec-1-2-3"><span class="section-number-4">1.2.3</span> Winning</h4>
-<div class="outline-text-4" id="text-1-2-3">
-
-<p>When there aren't enough cards left to carry out another round, the
-game is over. What does it mean there aren't enough cards? First, if
-there enough cards for every player to have at least 2, then there
-are enough cards. Any remaining cards after every player has taken 2
-are availible in a first come-first serve fashion. If there are only
-enough cards for 1 card per player, then the gameplay reverts to war.
-In all other cases, there aren't enough cards, and the remaining
-cards are dead.
-</p>
+<li>Sets<br ><ol class="org-ol"><li>Completion<br ><div class="outline-text-6" id="text-1-2-2-3-1">
 <p>
-The winner is the player with the most cards.
+Sets are complete when there aren't enough cards left to carry out
+another round, the game is over. What does it mean there aren't enough
+cards? First, if there enough cards for every player to have at least
+2, then there are enough cards. Any remaining cards after every player
+has taken 2 are available in a first come-first serve fashion. If
+there are only enough cards for 1 card per player, then the gameplay
+reverts to war. In all other cases, there aren't enough cards, and the
+remaining cards are dead.
+</p>
+</div>
+</li>
+
+<li>Winning<br ><div class="outline-text-6" id="text-1-2-2-3-2">
+<p>
+The winner is the player with the most cards. If multiple players have
+the same number of cards, they share the win. This is important for
+the tabulation of points (see below).
+</p>
+</div>
+
+<ol class="org-ol"><li>Tabulating Points<br ><div class="outline-text-7" id="text-1-2-2-3-2-1">
+<p>
+Once the winning player(s) of the set has been found, their card
+totals are transferred into point totals, which are added to a running
+sum across all sets until the Match has been completed. 
 </p>
 
+<p>
+In general, points are simply 1-to-1 mapped to the number of cards the
+player won during that set &#x2013; with 1 caveat&#x2026; Aces! If the winning
+player(s) has any Aces in their hand, they receive what is known as
+"Ace benefit," which is an additional point-per-Ace. Conversely, for
+every Ace each losing player has in their hand, they receive what is
+known as "Ace damage," which removes a point.
+</p>
+</div>
+</li></ol>
+</li></ol>
+</li>
+
+<li>Matches<br ><ol class="org-ol"><li>Completion<br ><div class="outline-text-6" id="text-1-2-2-4-1">
+<p>
+A Match is complete when a player has reached N points (where N is a
+number we haven't decided yet).
+</p>
+</div>
+</li>
+
+<li>Winning<br ><div class="outline-text-6" id="text-1-2-2-4-2">
+<p>
+The winner of the match the person who reaches N points first. If
+multiple players reach N at the completion of a set, then the player
+with the highest card total overall wins. 
+</p>
+
+<p>
+If multiple players have the same number of cards&#x2026; we don't know
+yet. Perhaps revert to war again (though that's unsatisfying).
+</p>
+</div>
+</li></ol>
+</li></ol>
 </div>
 </div>
 
-</div>
 
-<div id="outline-container-1-3" class="outline-3">
-<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Creators</h3>
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Creators, Maintainers and Benevolent Overlords for Life</h3>
 <div class="outline-text-3" id="text-1-3">
-
-<ul>
+<ul class="org-ul">
 <li>Thomas Donahue
 </li>
 <li>Carlos Asmat
@@ -298,18 +382,23 @@ The winner is the player with the most cards.
 <li>Cody Canning
 </li>
 </ul>
-
-</div>
-</div>
-</div>
 </div>
 
-<div id="postamble">
-<p class="date">Date: 2014-11-17T22:15-0500</p>
-<p class="author">Author: Thomas Donahue</p>
-<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
-<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
-
+<div id="outline-container-sec-1-3-1" class="outline-4">
+<h4 id="sec-1-3-1"><span class="section-number-4">1.3.1</span> Contributors</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<ul class="org-ul">
+<li>Lindsay and Alex
+</li>
+<li>Holly Morris
+</li>
+<li>Russ Nickerson
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 </div>
 </body>
 </html>
