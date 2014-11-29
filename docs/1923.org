@@ -39,10 +39,10 @@ with what you got.
 1923 is played in terms of Games, Sets and Matches (akin to Tennis).  
 
 - A *game* is much like a "hand" in other card games (e.g. Poker), it is
-  the smallest chunk of the game. There are multiple games per set.
+  the smallest chunk of 1923. There are multiple games per set.
 - A *set* is complete when the deck has been depleted. There are
   multiple sets per match.
-- A *match* is what comprises the entire length of the game.
+- A *match* is what comprises the entire length of 1923.
 
 **** Games
 ***** Winning
@@ -71,7 +71,7 @@ play war until there is a winner.
 1. Every player draws 2 cards and places them face down (without
    looking at them).
 2. Players may look at one of their 2 cards.
-3. If a player desires to view the other card, they may due so, but
+3. If a player desires to view the other card, they may do so, but
    are required to take another card from the deck as a result.
    Players can repeat this step as many times as they would like. This
    is done asynchronously (i.e., you needn't wait and see what other
