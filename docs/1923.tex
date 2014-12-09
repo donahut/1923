@@ -1,4 +1,4 @@
-% Created 2014-11-29 Sat 10:52
+% Created 2014-12-08 Mon 21:14
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -108,8 +108,18 @@ king) wins (repeat until winner is found).
 
 If there aren't enough cards to break a tie in that manner, stay tuned
 because we haven't figured it out yet. One idea we're kicking around,
-if you'd like guidance, if to take all of the cards in your hand and
+if you'd like guidance, is to take all of the cards in your hand and
 play war until there is a winner.
+
+
+\item 3-Ace-23\\
+\label{sec-2-2-2-1-2}%
+If a player achieves a 23 via 3 Aces (known as a 3-Ace-23), they
+automatically win the game and the set is over. All remaining cards in
+draw deck go to the player as part of their set total. In the case that
+multiple players achieve a 3-Ace-23, then the tie is resolved just as
+outlined above. The winner of the tiebreaker recieves all of the
+cards.
 
 \end{itemize} % ends low level
 
@@ -148,52 +158,35 @@ cards? First, if there enough cards for every player to have at least
 has taken 2 are available in a first come-first serve fashion. If
 there are only enough cards for 1 card per player, then the gameplay
 reverts to war. In all other cases, there aren't enough cards, and the
-remaining cards are dead.
+remaining cards are dead (i.e. they are not used in anyway until the
+next set). 
 
 
 \item Winning\\
 \label{sec-2-2-3-2}%
 The winner is the player with the most cards. If multiple players have
-the same number of cards, they share the win. This is important for
-the tabulation of points (see below).
+the same number of cards, the set moves into a tiebreaker. 
+
+
+
 
 \begin{itemize}
 
-\item Tabulating Points\\
+\item Breaking Ties\\
 \label{sec-2-2-3-2-1}%
-Once the winning player(s) of the set has been found, their card
-totals are transferred into point totals, which are added to a running
-sum across all sets until the Match has been completed. 
-
-In general, points are simply 1-to-1 mapped to the number of cards the
-player won during that set -- with 1 caveat\ldots{} \textbf{/Aces/}! If the winning
-player(s) has any Aces in their hand, they receive what is known as
-\emph{Ace benefit}, which is an additional point-per-Ace. Conversely, for
-every Ace each losing player has in their hand, they receive what is
-known as \emph{Ace damage}, which removes a point.
+Due to a recent rule change, we are re-evaluating how to break set
+ties. Until then, do whatever works for you!
 
 \end{itemize} % ends low level
 \end{itemize} % ends low level
 \subsubsection{Matches}
 \label{sec-2-2-4}
-\begin{itemize}
-
-\item Completion\\
-\label{sec-2-2-4-1}%
-A match is complete when a player has reached N points (where N is a
-number we haven't decided yet).
 
 
-\item Winning\\
-\label{sec-2-2-4-2}%
-The winner of the match the person who reaches N points first. If
-multiple players reach N at the completion of a set, then the player
-with the highest card total overall wins. 
-
-If multiple players have the same number of cards\ldots{} we don't know
-yet. Perhaps revert to war again (though that's unsatisfying).
-
-\end{itemize} % ends low level
+A match is complete when a player has won 4 (or more) sets, by 2 sets
+from the next winningest player. Thus, for example, if Player A wins 4
+sets, but Player B has won 3 sets, then Player A must win another set
+(5), in order to win the match.
 \section{Customs and Traditions}
 \label{sec-3}
 
