@@ -1,27 +1,35 @@
-* 1923
+#+LATEX_HEADER:\usepackage{fullpage}
+#+LATEX_HEADER:\usepackage{parskip}
+#+OPTIONS: ^:nil
+
+#+TITLE: 1923
+#+AUTHOR: A magnificent card game
+#+DATE: 
+
 ** About
 Magnificent card game.
 
 *** Testimonials
-"1923 saved my life." - Local man
-
-"So asynchronous!" - Carlos
-
-"Surprisingly fun." - Holly
-
-"Fun and addicting" - Juan
-
+- "1923 saved my life." - Local man
+- "So asynchronous!" - Carlos
+- "Surprisingly fun." - Holly
+- "Fun and addicting" - Juan
+  
 
 ** Rules
+
+Rules are great, but paramount are *Customs and Traditions*. Don't be
+an idiot, read Section 3 before playing.
+
 *** Players
 2 or more players are required to play
 
 **** Decks
 The number of decks used depend on the number of players. To
 calculate how many decks you should be using, here is a handy-dandy
-equation:
+equation:\\
 
-number of decks = ceil( number of players / 3 )
+=number of decks = ceil( number of players / 3 )=\\
 
 On the other hand, if you lack the proper amount of decks, just go
 with what you got. 
@@ -31,14 +39,15 @@ with what you got.
 **** Overview
 1923 is played in terms of Games, Sets and Matches (akin to Tennis).  
 
-- A Game is much like a "hand" in other card games (e.g. Poker), it is
-  the smallest chunk of the game. There are multiple games per set.
-- A Set is complete when the deck has been depleted. There are
+- A *game* is much like a "hand" in other card games (e.g. Poker), it is
+  the smallest chunk of 1923. There are multiple games per set.
+- A *set* is complete when the deck has been depleted. There are
   multiple sets per match.
-- A Match is what comprises the entire length of the game.
+- A *match* is what comprises the entire length of 1923.
 
 **** Games
 ***** Winning
+
 Combined card value (blackjack rules; Ace can be 1 or 11) between
 19-23. If multiple players are within that range, the player with the
 value closest to 23 wins. If no player is within that range, the
@@ -47,6 +56,7 @@ player with the value closest to 19 or 23 wins (being closer to 19 or
 (including tiebreaker cards). 
 
 ****** Breaking Ties
+
 Player with the highest average card value wins. If multiple players
 have the same average card value, the players will draw a single card
 and highest card (as before, based on value, i.e. 10 is the same as a
@@ -54,14 +64,24 @@ king) wins (repeat until winner is found).
 
 If there aren't enough cards to break a tie in that manner, stay tuned
 because we haven't figured it out yet. One idea we're kicking around,
-if you'd like guidance, if to take all of the cards in your hand and
+if you'd like guidance, is to take all of the cards in your hand and
 play war until there is a winner.
 
+****** 3-Ace-23
+
+If a player achieves a 23 via 3 Aces (known as a 3-Ace-23), they
+automatically win the game and the set is over. All remaining cards in
+draw deck go to the player as part of their set total. In the case that
+multiple players achieve a 3-Ace-23, then the tie is resolved just as
+outlined above. The winner of the tiebreaker recieves all of the
+cards.
+
 ***** Gameplay
+
 1. Every player draws 2 cards and places them face down (without
    looking at them).
 2. Players may look at one of their 2 cards.
-3. If a player desires to view the other card, they may due so, but
+3. If a player desires to view the other card, they may do so, but
    are required to take another card from the deck as a result.
    Players can repeat this step as many times as they would like. This
    is done asynchronously (i.e., you needn't wait and see what other
@@ -76,7 +96,9 @@ play war until there is a winner.
    outlined above.
 
 **** Sets
+
 ***** Completion
+
 Sets are complete when there aren't enough cards left to carry out
 another round, the game is over. What does it mean there aren't enough
 cards? First, if there enough cards for every player to have at least
@@ -84,39 +106,44 @@ cards? First, if there enough cards for every player to have at least
 has taken 2 are available in a first come-first serve fashion. If
 there are only enough cards for 1 card per player, then the gameplay
 reverts to war. In all other cases, there aren't enough cards, and the
-remaining cards are dead.
+remaining cards are dead (i.e. they are not used in anyway until the
+next set). 
 
 ***** Winning
+
 The winner is the player with the most cards. If multiple players have
-the same number of cards, they share the win. This is important for
-the tabulation of points (see below).
+the same number of cards, the set moves into a tiebreaker. 
+# share the win. This is important for
+# the tabulation of points (see below).
 
-****** Tabulating Points
-Once the winning player(s) of the set has been found, their card
-totals are transferred into point totals, which are added to a running
-sum across all sets until the Match has been completed. 
+# ****** Tabulating Points
 
-In general, points are simply 1-to-1 mapped to the number of cards the
-player won during that set -- with 1 caveat... Aces! If the winning
-player(s) has any Aces in their hand, they receive what is known as
-"Ace benefit," which is an additional point-per-Ace. Conversely, for
-every Ace each losing player has in their hand, they receive what is
-known as "Ace damage," which removes a point.
+# Once the winning player(s) of the set has been found, their card
+# totals are transferred into point totals, which are added to a running
+# sum across all sets until the Match has been completed. 
+
+# In general, points are simply 1-to-1 mapped to the number of cards the
+# player won during that set -- with 1 caveat... */Aces/*! If the winning
+# player(s) has any Aces in their hand, they receive what is known as
+# /Ace benefit/, which is an additional point-per-Ace. Conversely, for
+# every Ace each losing player has in their hand, they receive what is
+# known as /Ace damage/, which removes a point.
+
+****** Breaking Ties
+
+Due to a recent rule change, we are re-evaluating how to break set
+ties. Until then, do whatever works for you!
 
 **** Matches
-***** Completion
-A Match is complete when a player has reached N points (where N is a
-number we haven't decided yet).
+# ***** Winning
 
-***** Winning
-The winner of the match the person who reaches N points first. If
-multiple players reach N at the completion of a set, then the player
-with the highest card total overall wins. 
-
-If multiple players have the same number of cards... we don't know
-yet. Perhaps revert to war again (though that's unsatisfying).
+A match is complete when a player has won 4 (or more) sets, by 2 sets
+from the next winningest player. Thus, for example, if Player A wins 4
+sets, but Player B has won 3 sets, then Player A must win another set
+(5), in order to win the match.
 
 ** Customs and Traditions
+
 1923 has a rich and colourful tradition that resulted in the general acceptance
 of some peculiar and distinctive practices. Although from a practical standpoint
 they may seem unavailing to the game, these conventions are cherished and
@@ -129,7 +156,7 @@ contributors.
    but shuffling is frowned upon. Early mathematical analysis of the game made
    it very clear that shuffling does not affect its mechanics.
 
-2. When picking cards form the deck, they are to be placed side-by-side and to
+2. When picking cards from the deck, they are to be placed side-by-side and to
    the right-hand-side in front of the player.
 
 2. When picking additional cards from the deck, they must be placed to the left
@@ -151,4 +178,4 @@ contributors.
 - Lindsay and Alex
 - Holly Morris
 - Russ Nickerson
->>>>>>> 654e7fff93535800ec63068cde1a6a0e3d7daeea
+  

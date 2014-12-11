@@ -1,4 +1,4 @@
-% Created 2014-11-17 Mon 22:15
+% Created 2014-12-08 Mon 21:14
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -15,11 +15,13 @@
 \usepackage{amssymb}
 \usepackage{hyperref}
 \tolerance=1000
+\usepackage{fullpage}
+\usepackage{parskip}
 \providecommand{\alert}[1]{\textbf{#1}}
 
 \title{1923}
-\author{Thomas Donahue}
-\date{\today}
+\author{A magnificent card game}
+\date{}
 \hypersetup{
   pdfkeywords={},
   pdfsubject={},
@@ -32,42 +34,62 @@
 \setcounter{tocdepth}{3}
 \tableofcontents
 \vspace*{1cm}
-\section{1923}
+
+
+\section{About}
 \label{sec-1}
-\subsection{About}
+
+Magnificent card game.
+\subsection{Testimonials}
 \label{sec-1-1}
 
-Magnificient card game.
-\subsubsection{Testimonials}
-\label{sec-1-1-1}
+\begin{itemize}
+\item ``1923 saved my life.'' - Local man
+\item ``So asynchronous!'' - Carlos
+\item ``Surprisingly fun.'' - Holly
+\end{itemize}
+  
+\section{Rules}
+\label{sec-2}
 
-``1923 saved my life.'' - Local man
-\subsection{Rules}
-\label{sec-1-2}
-\subsubsection{Players}
-\label{sec-1-2-1}
+
+Rules are great, but paramount are \textbf{Customs and Traditions}. Don't be
+an idiot, read Section 3 before playing.
+\subsection{Players}
+\label{sec-2-1}
 
 2 or more players are required to play
-\begin{itemize}
+\subsubsection{Decks}
+\label{sec-2-1-1}
 
-\item Decks\\
-\label{sec-1-2-1-1}%
-The number of decks used are dependent on the number of players. To
-calcultae how many decks you should be using, here is a handy-dandy
-equation:
+The number of decks used depend on the number of players. To
+calculate how many decks you should be using, here is a handy-dandy
+equation:\\
 
-number of decks = ceil( number of players / 3 )
+\texttt{number of decks = ceil( number of players / 3 )}\\
 
 On the other hand, if you lack the proper amount of decks, just go
 with what you got. 
+\subsection{Structure}
+\label{sec-2-2}
+\subsubsection{Overview}
+\label{sec-2-2-1}
 
-\end{itemize} % ends low level
-\subsubsection{Gameplay}
-\label{sec-1-2-2}
+1923 is played in terms of Games, Sets and Matches (akin to Tennis).  
+
+\begin{itemize}
+\item A \textbf{game} is much like a ``hand'' in other card games (e.g. Poker), it is
+  the smallest chunk of 1923. There are multiple games per set.
+\item A \textbf{set} is complete when the deck has been depleted. There are
+  multiple sets per match.
+\item A \textbf{match} is what comprises the entire length of 1923.
+\end{itemize}
+\subsubsection{Games}
+\label{sec-2-2-2}
 \begin{itemize}
 
 \item Winning\\
-\label{sec-1-2-2-1}%
+\label{sec-2-2-2-1}%
 Combined card value (blackjack rules; Ace can be 1 or 11) between
 19-23. If multiple players are within that range, the player with the
 value closest to 23 wins. If no player is within that range, the
@@ -78,59 +100,136 @@ player with the value closest to 19 or 23 wins (being closer to 19 or
 \begin{itemize}
 
 \item Breaking Ties\\
-\label{sec-1-2-2-1-1}%
+\label{sec-2-2-2-1-1}%
 Player with the highest average card value wins. If multiple players
 have the same average card value, the players will draw a single card
 and highest card (as before, based on value, i.e. 10 is the same as a
-king) wins (repeat until winner is found).
+king) wins (repeat until winner is found). 
+
+If there aren't enough cards to break a tie in that manner, stay tuned
+because we haven't figured it out yet. One idea we're kicking around,
+if you'd like guidance, is to take all of the cards in your hand and
+play war until there is a winner.
+
+
+\item 3-Ace-23\\
+\label{sec-2-2-2-1-2}%
+If a player achieves a 23 via 3 Aces (known as a 3-Ace-23), they
+automatically win the game and the set is over. All remaining cards in
+draw deck go to the player as part of their set total. In the case that
+multiple players achieve a 3-Ace-23, then the tie is resolved just as
+outlined above. The winner of the tiebreaker recieves all of the
+cards.
 
 \end{itemize} % ends low level
 
-\item Drawing Cards
-\label{sec-1-2-2-2}%
+\item Gameplay\\
+\label{sec-2-2-2-2}%
 \begin{enumerate}
 \item Every player draws 2 cards and places them face down (without
-   looking at them). By custom, the cards are to be placed
-   side-by-side and to the right hand side in front of the player.
+   looking at them).
 \item Players may look at one of their 2 cards.
-\item If a player desires to view the other card, they may due so, but
+\item If a player desires to view the other card, they may do so, but
    are required to take another card from the deck as a result.
    Players can repeat this step as many times as they would like. This
    is done asynchronously (i.e., you needn't wait and see what other
-   players do). By custom, each additional card must be placed to the
-   left of the original 2 cards (and so on).
-\item Each player must lock their left-most card when they are done
+   players do).
+\item Each player must lock their last card when they are done
    drawing cards (i.e., the card they do not know the value of). Once
    a player has locked, they cannot unlock. To lock, the player turns
    the card sideways -- a card is locked once the player has removed
    their hand from the card.
 \item Once each player has locked, all players must turnover their cards
-   (from right to left) and count their value. Winner is determined as
+   and count their value. Winner is determined as
    outlined above.
 \end{enumerate}
 
+\end{itemize} % ends low level
+\subsubsection{Sets}
+\label{sec-2-2-3}
+\begin{itemize}
+
+\item Completion\\
+\label{sec-2-2-3-1}%
+Sets are complete when there aren't enough cards left to carry out
+another round, the game is over. What does it mean there aren't enough
+cards? First, if there enough cards for every player to have at least
+2, then there are enough cards. Any remaining cards after every player
+has taken 2 are available in a first come-first serve fashion. If
+there are only enough cards for 1 card per player, then the gameplay
+reverts to war. In all other cases, there aren't enough cards, and the
+remaining cards are dead (i.e. they are not used in anyway until the
+next set). 
+
+
+\item Winning\\
+\label{sec-2-2-3-2}%
+The winner is the player with the most cards. If multiple players have
+the same number of cards, the set moves into a tiebreaker. 
+
+
+
+
+\begin{itemize}
+
+\item Breaking Ties\\
+\label{sec-2-2-3-2-1}%
+Due to a recent rule change, we are re-evaluating how to break set
+ties. Until then, do whatever works for you!
 
 \end{itemize} % ends low level
-\subsubsection{Winning}
-\label{sec-1-2-3}
+\end{itemize} % ends low level
+\subsubsection{Matches}
+\label{sec-2-2-4}
 
-When there aren't enough cards left to carry out another round, the
-game is over. What does it mean there aren't enough cards? First, if
-there enough cards for every player to have at least 2, then there
-are enough cards. Any remaining cards after every player has taken 2
-are availible in a first come-first serve fashion. If there are only
-enough cards for 1 card per player, then the gameplay reverts to war.
-In all other cases, there aren't enough cards, and the remaining
-cards are dead.
 
-The winner is the player with the most cards.
-\subsection{Creators}
-\label{sec-1-3}
+A match is complete when a player has won 4 (or more) sets, by 2 sets
+from the next winningest player. Thus, for example, if Player A wins 4
+sets, but Player B has won 3 sets, then Player A must win another set
+(5), in order to win the match.
+\section{Customs and Traditions}
+\label{sec-3}
+
+
+1923 has a rich and colourful tradition that resulted in the general acceptance
+of some peculiar and distinctive practices. Although from a practical standpoint
+they may seem unavailing to the game, these conventions are cherished and
+respected by most players. Many consider that ignoring these customs is a sign
+of direct disrespect to the game's culture and its beloved creators and
+contributors.
+\subsection{Traditional Practices}
+\label{sec-3-1}
+
+\begin{enumerate}
+\item The cards shall not be shuffled. They may be mixed and the deck can be cut
+   but shuffling is frowned upon. Early mathematical analysis of the game made
+   it very clear that shuffling does not affect its mechanics.
+\item When picking cards from the deck, they are to be placed side-by-side and to
+   the right-hand-side in front of the player.
+\item When picking additional cards from the deck, they must be placed to the left
+   of the original 2 cards. This results in the leftmost card being always
+   unknown, adding a deep metaphorical meaning to the game and evoking the
+   sinister connotation of the sinistral card.
+\item At the end of each hand, the cards should be revealed from right to left.
+   This prolongs the suspense for each player, adding to the bold fun we all
+   grew to expect from this magnificent game.
+\end{enumerate}
+\section{Creators, Maintainers and Benevolent Overlords for Life}
+\label{sec-4}
 
 \begin{itemize}
 \item Thomas Donahue
 \item Carlos Asmat
 \item Cody Canning
 \end{itemize}
+\subsection{Contributors}
+\label{sec-4-1}
+
+\begin{itemize}
+\item Lindsay and Alex
+\item Holly Morris
+\item Russ Nickerson
+\end{itemize}
+  
 
 \end{document}
