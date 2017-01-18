@@ -47,6 +47,7 @@ Magnificent card game.
 \item ``1923 saved my life.'' - Local man
 \item ``So asynchronous!'' - Carlos
 \item ``Surprisingly fun.'' - Holly
+\item ``Why?'' - An Unnamed Game Design Major 
 \end{itemize}
   
 \section{Rules}
@@ -75,51 +76,48 @@ with what you got.
 \subsubsection{Overview}
 \label{sec-2-2-1}
 
-1923 is played in terms of Games, Sets and Matches (akin to Tennis).  
+1923 is played in terms of Hands and Rounds.   
 
 \begin{itemize}
-\item A \textbf{game} is much like a ``hand'' in other card games (e.g. Poker), it is
-  the smallest chunk of 1923. There are multiple games per set.
-\item A \textbf{set} is complete when the deck has been depleted. There are
-  multiple sets per match.
-\item A \textbf{match} is what comprises the entire length of 1923.
+\item A \textbf{hand} is much like a ``hand'' in other card games (e.g. Poker), it is
+  the smallest chunk of 1923. There are multiple hands per round.
+\item A \textbf{round} is complete when the deck has been depleted. There are
+  multiple rounds per game.
 \end{itemize}
-\subsubsection{Games}
+\subsubsection{Hands}
 \label{sec-2-2-2}
 \begin{itemize}
 
-\item Winning\\
+\item Winning a Hand\\
 \label{sec-2-2-2-1}%
-Combined card value (blackjack rules; Ace can be 1 or 11) between
-19-23. If multiple players are within that range, the player with the
-value closest to 23 wins. If no player is within that range, the
-player with the value closest to 19 or 23 wins (being closer to 19 or
-23 are equal). Winning player keeps all cards from the round
-(including tiebreaker cards). 
+The goal of a hand is to have a combined card value (blackjack rules; 
+Ace can be 1 or 11) between 19-23. If multiple players are within that 
+range, the player with the value closest to 23 wins. If no player is 
+within that range, the player with the value closest to 19 or 23 wins 
+(being closer to 19 or 23 are equal). Winning player keeps all cards 
+from the round including the other players hands, tiebreaker cards, etc. 
 
 \begin{itemize}
 
 \item Breaking Ties\\
 \label{sec-2-2-2-1-1}%
-Player with the highest average card value wins. If multiple players
-have the same average card value, the players will draw a single card
-and highest card (as before, based on value, i.e. 10 is the same as a
-king) wins (repeat until winner is found). 
+Ties between players are settled by looking at the highest value card in 
+each hand. The player with the highest value card wins the tie. If multiple 
+players in the tie have the same highest value card, the second highest card 
+per hand is used and so on. 
 
-If there aren't enough cards to break a tie in that manner, stay tuned
-because we haven't figured it out yet. One idea we're kicking around,
-if you'd like guidance, is to take all of the cards in your hand and
-play war until there is a winner.
+Should players in a tie have the exact same hand, the game results in a 
+``Perfect Tie'' and all tied players recieve a point for that hand. 
 
 
 \item 3-Ace-23\\
 \label{sec-2-2-2-1-2}%
 If a player achieves a 23 via 3 Aces (known as a 3-Ace-23), they
-automatically win the game and the set is over. All remaining cards in
-draw deck go to the player as part of their set total. In the case that
+automatically win the hand and the round is over. All remaining cards in
+draw deck go to the player as part of their round total. In the case that
 multiple players achieve a 3-Ace-23, then the tie is resolved just as
-outlined above. The winner of the tiebreaker recieves all of the
-cards.
+outlined above. The winner of the tiebreaker recieves ALL of the
+remaining cards.
 
 \end{itemize} % ends low level
 
@@ -144,28 +142,32 @@ cards.
    outlined above.
 \end{enumerate}
 
+\item Cheating\\
+\label{sec-2-2-2-2-3}%
+If a player is caught cheating during the play of a hand, they forefeit 
+the entire round. They sit out of the play of the rest of the round and 
+their cards are out of play until the beginning of the next round. 
+
 \end{itemize} % ends low level
-\subsubsection{Sets}
+\subsubsection{Rounds}
 \label{sec-2-2-3}
 \begin{itemize}
 
 \item Completion\\
 \label{sec-2-2-3-1}%
-Sets are complete when there aren't enough cards left to carry out
-another round, the game is over. What does it mean there aren't enough
-cards? First, if there enough cards for every player to have at least
-2, then there are enough cards. Any remaining cards after every player
-has taken 2 are available in a first come-first serve fashion. If
-there are only enough cards for 1 card per player, then the gameplay
-reverts to war. In all other cases, there aren't enough cards, and the
-remaining cards are dead (i.e. they are not used in anyway until the
-next set). 
+A round is complete when there aren't enough cards left to carry out
+another. If there enough cards for every player to have at least
+2 at the start of the round, then there are enough cards. Any remaining 
+cards after every player has taken 2 are available in a first come-first 
+serve fashion. In all other cases, there aren't enough cards, and the
+remaining cards are dead (i.e. they do not count towards the results of
+this round). 
 
 
 \item Winning\\
 \label{sec-2-2-3-2}%
 The winner is the player with the most cards. If multiple players have
-the same number of cards, the set moves into a tiebreaker. 
+the same number of cards, the round moves into a tiebreaker. 
 
 
 
@@ -174,19 +176,19 @@ the same number of cards, the set moves into a tiebreaker.
 
 \item Breaking Ties\\
 \label{sec-2-2-3-2-1}%
-Due to a recent rule change, we are re-evaluating how to break set
-ties. Until then, do whatever works for you!
+If two or more players are tied in number of cards at the end of the 
+round, the round goes to the tied player who most recently won a hand.
 
 \end{itemize} % ends low level
 \end{itemize} % ends low level
-\subsubsection{Matches}
+\subsubsection{Games}
 \label{sec-2-2-4}
 
 
-A match is complete when a player has won 4 (or more) sets, by 2 sets
-from the next winningest player. Thus, for example, if Player A wins 4
-sets, but Player B has won 3 sets, then Player A must win another set
-(5), in order to win the match.
+A match is complete when a player has won 3 (or more) rounds, and is at
+least 2 rounds ahead of all other players. Thus, for example, if Player A 
+wins 3 rounds, but Player B has won 2, then Player A must win another round
+(4), in order to win the game.
 \section{Customs and Traditions}
 \label{sec-3}
 
@@ -194,9 +196,8 @@ sets, but Player B has won 3 sets, then Player A must win another set
 1923 has a rich and colourful tradition that resulted in the general acceptance
 of some peculiar and distinctive practices. Although from a practical standpoint
 they may seem unavailing to the game, these conventions are cherished and
-respected by most players. Many consider that ignoring these customs is a sign
-of direct disrespect to the game's culture and its beloved creators and
-contributors.
+respected by most players. Ignoring these customs is a sign of direct disrespect 
+to the game's culture and its beloved creators and contributors.
 \subsection{Traditional Practices}
 \label{sec-3-1}
 
@@ -229,6 +230,7 @@ contributors.
 \item Lindsay and Alex
 \item Holly Morris
 \item Russ Nickerson
+\item Stu Ramgolam
 \end{itemize}
   
 
